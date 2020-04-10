@@ -1,0 +1,14 @@
+.head{
+    text-align: left;
+    padding: 32px;
+    position: relative;
+    top:-150px;
+}
+.symp{
+    position: relative;
+    top:-400px;
+    left: 800px;
+}
+li{
+    font-size: 24px;
+}
