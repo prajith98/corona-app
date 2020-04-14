@@ -1,24 +1,28 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './menu.css'
+import {Link }from 'react-router-dom'
 
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
+
+class Menu extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        home_active: "active",
+        news_active: null,
+    };
   }
 
-function Menu() {
+  render() {
     return (
-            <div class="topnav" >
-                <a href="/" class="active">Home</a>
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+            <div className="topnav" >
+              <Link to="/" className={this.state.home_active} onClick={ () => this.setState({home_active: "active",news_active:null })} style={{ textDecoration: 'none' }}>Home</Link>
+              <Link to="/news" className={this.state.news_active} onClick={ () => this.setState({home_active: null,news_active:"active"}) } style={{ textDecoration: 'none' }}>News</Link>
+              <Link to="#contact" style={{ textDecoration: 'none' }}>Contact</Link>
+              <Link to="#about" style={{ textDecoration: 'none' }}>About</Link>
             </div>
+            
     )
+  }
 }
 
 export default Menu

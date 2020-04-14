@@ -17,7 +17,7 @@ function SymptomsContent() {
                     <li>Severe acute respiratory Syndrome</li>
                     <li>Kidney failure</li>
                 </ul>
-            <img src='https://static.toiimg.com/photo/imgsize-314866,msid-74731845/74731845.jpg' ></img>
+            <img className="symp" src='https://static.toiimg.com/photo/imgsize-314866,msid-74731845/74731845.jpg' ></img>
         </div>
         </React.Fragment>
         

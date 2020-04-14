@@ -33,10 +33,10 @@ class Table extends Component {
                     </thead>
                     <tbody>
                         {
-                            this.data.map((value, index) => {
-                                if(value.confirmed!=0&&index>0)
+                            this.data
+                            .map((value, index) => {
+                                if(value.confirmed!==0&&index>0)
                                 return (
-                                    
                                    <tr key={index}>
                                       <td style={{textAlign : "right"}}>{index}</td>
                                       <td style={{textAlign : "center"}}>{value.state}</td>
