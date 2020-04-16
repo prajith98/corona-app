@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './menu.css'
-import {Link }from 'react-router-dom'
-
+import {Link} from 'react-router-dom'
 
 class Menu extends Component {
   constructor(props) {
@@ -14,6 +13,7 @@ class Menu extends Component {
 
   render() {
     return (
+            
             <div className="topnav" >
               <Link to="/" className={this.state.home_active} onClick={ () => this.setState({home_active: "active",news_active:null })} style={{ textDecoration: 'none' }}>Home</Link>
               <Link to="/news" className={this.state.news_active} onClick={ () => this.setState({home_active: null,news_active:"active"}) } style={{ textDecoration: 'none' }}>News</Link>
