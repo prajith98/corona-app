@@ -33,6 +33,8 @@ export class Home extends Component {
                 <Death value={this.state.deaths}/>
                 <Recover value={this.state.recovered}/> 
                 <marquee hspace="310" behavior="scroll"  direction="left">Central Helpline Number for CoronaVirus: <a href="+91-11-23978046">+91-11-23978046</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Helpline Email ID: <a href="ncov2019@gov.in">ncov2019@gov.in</a> or <a href="ncov2019@gmail.com">ncov2019@gmail.com</a></marquee>
+
+                <h4 className='from'>Compiled from State Govt. numbers</h4>
                 <Link to="/prevent" style={{ textDecoration: 'none' }}>
                     <Prevent/>
                 </Link>

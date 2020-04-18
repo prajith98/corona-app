@@ -35,7 +35,7 @@ class Table extends Component {
                         {
                             this.data
                             .map((value, index) => {
-                                if(value.confirmed!==0&&index>0)
+                                if(value.confirmed!=0&&index>0)
                                 return (
                                    <tr key={index}>
                                       <td style={{textAlign : "right"}}>{index}</td>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import TimeAgo from 'timeago-react';
 import './News.css'
 const nl2br = require('react-nl2br');
 class News extends Component {
