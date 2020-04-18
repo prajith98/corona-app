@@ -28,7 +28,7 @@ export class Home extends Component {
     render() {
         return (
             <React.Fragment>
-                <img className='back' src={back} alt="Trulli" ></img>
+                <img className='back' src="https://github.com/prajith98/corona-app/blob/master/src/Components/img/back.jpg" alt="Trulli" ></img>
                 <Total value={this.state.confirmed}/>
                 <Death value={this.state.deaths}/>
                 <Recover value={this.state.recovered}/> 
