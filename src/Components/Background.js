@@ -20,11 +20,11 @@ class Background extends Component
                     <h2 className='pandemic'>PANDEMIC</h2>
                     <Menu /> 
                     <Switch>
-                        <Route path="/corona-app/" exact component={Home} />
-                        <Route path="/corona-app/prevent" component={PreventContent} />
-                        <Route path="/corona-app/symptoms" component={SymptomsContent} />
-                        <Route path="/corona-app/myths" component={MythContent} />
-                        <Route path="/corona-app/news" exact component={News} />
+                        <Route path="/" exact component={Home} />
+                        <Route path="/prevent" component={PreventContent} />
+                        <Route path="/symptoms" component={SymptomsContent} />
+                        <Route path="/myths" component={MythContent} />
+                        <Route path="/news" exact component={News} />
                         
                     </Switch>
                 </div>
